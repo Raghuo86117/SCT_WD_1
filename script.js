@@ -1,4 +1,4 @@
-// Scroll navbar background
+
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
@@ -6,8 +6,6 @@ window.addEventListener('scroll', () => {
     } else {
       navbar.classList.remove('scrolled');
     }
-  
-    // Highlight current section
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-item');
     let current = '';
@@ -26,8 +24,6 @@ window.addEventListener('scroll', () => {
       }
     });
   });
-  
-  // Toggle menu on mobile
   document.getElementById('menu-toggle').addEventListener('click', () => {
     document.getElementById('nav-links').classList.toggle('active');
   });
